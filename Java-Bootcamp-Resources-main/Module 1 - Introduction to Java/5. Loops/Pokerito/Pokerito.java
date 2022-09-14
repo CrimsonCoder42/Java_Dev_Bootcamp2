@@ -39,9 +39,15 @@ public class Pokerito {
          println 'Here's the computer's card:'
          <show computer's card>
         */
+        String playerCard = randomCard();
+        String computerCard = randomCard();
+
+        System.out.println("Here's your card: \n" + playerCard);
+
+        System.out.println("Here's the computer's card: \n" + computerCard);
 
         int yourMatches = 0;
-        int computerMatches =0;
+        int computerMatches = 0;
 
         /** Task 4 - Draw five cards
          * 
@@ -56,6 +62,8 @@ public class Pokerito {
          *      <print card>
          *      ...
          */
+
+         System.out.println("Now, the dealer will draw five cards. Press enter to continue.");
 
         /** Task 5 - Get the winner
          * 
