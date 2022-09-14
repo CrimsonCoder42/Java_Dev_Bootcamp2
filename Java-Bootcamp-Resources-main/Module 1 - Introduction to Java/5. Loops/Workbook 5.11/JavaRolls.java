@@ -8,6 +8,8 @@ public class JavaRolls {
               1. print: Let's play Rolling Java. Type anything to start.
               2. Get the user to enter any value
         */
+        System.out.println("Let's play Rolling Java. Type anything to start.");
+        String answer = scan.nextLine(); 
 
         /* Task 2: 
               1. Once the user is ready, print: 
@@ -18,8 +20,14 @@ public class JavaRolls {
                     You must collect at least 3 points to win. Enter anything to roll:
               2. Get the user to enter any value
         */
+        System.out.println("Great, here are the rules:\n");
+        System.out.println("- If you roll a 6 the game stops.");
+        System.out.println("- If you roll a 4 nothing happens.");
+        System.out.println("- Otherwise, you get 1 point.\n");
+        System.out.println("You must collect at least 3 points to win. Enter anything to roll:");
+        String play = scan.nextLine();
 
-       int score = 0;
+        int score = 0;
       
        /* 
          Task 3
@@ -45,6 +53,24 @@ public class JavaRolls {
               2. print: One point. Keep rolling. 
 
        */
+        while (true) {
+          System.out.println("enter a random value");
+          int value = scan.nextInt();
+          int diceRoll = rollDice();
+          System.out.println("You rolled a: " + diceRoll);
+          if(diceRoll == 6){
+            break;
+          } else if (diceRoll == 4){
+            System.out.println("Zero points. Keep rolling.");
+            continue;
+          } else {
+            score++;
+            System.out.println("One point. Keep rolling.");
+            continue;
+          }
+
+        }
+        System.out.println("End of game.");
 
       
       /* Task 7
@@ -67,6 +93,9 @@ public class JavaRolls {
      * @return randomNumber (int)
      * 
      */ 
-  
+    
+     public static int rollDice() {
+      return (int)(Math.random()*6) + 1; 
+     }
   
 }
