@@ -8,8 +8,8 @@ public class TDarrays{
             {82,84,88,86}
         };
         
-        System.out.println("\tHarry: " + Arrays.toString(grades[0]));
-        System.out.println("\tRon: " + Arrays.toString(grades[1]));
-        System.out.println("\tHermione: " + Arrays.toString(grades[2]));
+        System.out.println("\tHarry: " + grades[0][0] + " " + grades[0][1] + " " +grades[0][2] + " " + grades[0][3]);
+        System.out.println("\tRon: " + grades[1][0] + " " + grades[1][1] + " " +grades[1][2] + " " + grades[1][3]);
+        System.out.println("\tHermione: " + grades[2][0] + " " + grades[2][1] + " " +grades[2][2] + " " + grades[2][3]);
     }
 }
