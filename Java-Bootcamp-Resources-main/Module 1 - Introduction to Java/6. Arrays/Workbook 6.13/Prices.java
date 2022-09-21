@@ -29,9 +29,19 @@ public class Prices {
 
 
         // Task 3 - Print the prices for each department. See the article for the expected output.  
-        System.out.println("Baking: " + Arrays.toString(pricingTable[0]));
-        System.out.println("Beverage: " + Arrays.toString(pricingTable[1]));
-        System.out.println("Cereals: " + Arrays.toString(pricingTable[2]));
+        // System.out.println("Baking: " + Arrays.toString(pricingTable[0]));
+        // System.out.println("Beverage: " + Arrays.toString(pricingTable[1]));
+        // System.out.println("Cereals: " + Arrays.toString(pricingTable[2]));
+
+        String[] label = {"Baking: ", "Beverage: ", "Cereals: "};
+
+        for(int i = 0; i < pricingTable.length; i++){
+            System.out.print(label[i]);
+            for(int j = 0; j < pricingTable[i].length; j++) {
+                System.out.print("\t" + pricingTable[i][j]);
+            }
+            System.out.print("\n");
+        }
 
     }
 }

@@ -17,8 +17,23 @@ public class TDarrays{
         grades[2][1] = 84;
         grades[2][2] = 88;
         grades[2][3] = 86;
-        System.out.println("\tHarry: " + Arrays.toString(grades[0]));
-        System.out.println("\tRon: " + Arrays.toString(grades[1]));
-        System.out.println("\tHermione: " + Arrays.toString(grades[2]));
+
+        for (int j = 0; j < grades.length; j++) {
+            for (int i = 0; i < grades[0].length; i++) {      
+                System.out.print("\t" + grades[j][i]);
+            }   
+            System.out.print("\n");
+        }
+        
+
+        // for (int j = 0; j < grades[1].length; j++) {
+        //     System.out.print(grades[0][j]);
+        // }
+        // System.out.println("\n");
+
+        // for (int j = 0; j < grades[2].length; j++) {
+        //     System.out.print(+ grades[0][j]);
+        // }
+        
     }
 }
